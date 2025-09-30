@@ -766,14 +766,14 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_label_SecteurOuaga_2_eval_expression(context) {
-    // NOM_SECETE
+function exp_label_SecteurBoboDsso_2_eval_expression(context) {
+    // 'SECTEUR ' || SECTEUR
 
     var feature = context.feature;
     
     if (feature.properties) {
-        return feature.get('NOM_SECETE') ;
+        return ('SECTEUR ' + feature.get('SECTEUR') );
     } else {
-        return feature.get('NOM_SECETE') ;
+        return ('SECTEUR ' + feature.get('SECTEUR') );
     }
 }
